@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>bí quýet login facebook</title>
+  <style>
+    :root {
+      --bg-1: #5f2c82;
+      --bg-2: #49a09d;
+      --text: #ffffff;
+      --card: rgba(255, 255, 255, 0.15);
+      --card-border: rgba(255, 255, 255, 0.35);
+      --btn-1: #1877f2;
+      --btn-2: #4e9bff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      color: var(--text);
+      background: linear-gradient(135deg, var(--bg-1), var(--bg-2));
+      overflow: hidden;
+    }
+
+    .glow {
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      border-radius: 50%;
+      filter: blur(90px);
+      opacity: 0.45;
+      pointer-events: none;
+    }
+
+    .g1 {
+      top: -60px;
+      left: -80px;
+      background: #ff4ecd;
+    }
+
+    .g2 {
+      right: -100px;
+      bottom: -80px;
+      background: #00e5ff;
+    }
+
+    .card {
+      position: relative;
+      width: min(92vw, 520px);
+      padding: 34px 28px;
+      border-radius: 24px;
+      border: 1px solid var(--card-border);
+      background: var(--card);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      margin-bottom: 10px;
+      text-transform: capitalize;
+      letter-spacing: 0.5px;
+    }
+
+    p {
+      opacity: 0.92;
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+
+    .login-btn {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 700;
+      padding: 14px 24px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--btn-1), var(--btn-2));
+      box-shadow: 0 10px 25px rgba(24, 119, 242, 0.4);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .login-btn:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 14px 32px rgba(24, 119, 242, 0.55);
+    }
+
+    .login-btn:active {
+      transform: translateY(0) scale(0.99);
+    }
+  </style>
+</head>
+<body>
+  <div class="glow g1"></div>
+  <div class="glow g2"></div>
+
+  <main class="card">
+    <h1>bí quýet login facebook</h1>
+    <a
+      class="login-btn"
+      href="https://secure.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=120&lwc=1348131"
+    >
+      Mở trang đăng nhập Facebook
+    </a>
+  </main>
+</body>
+</html>
